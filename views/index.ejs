@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Count Dooku's Dookie Counter</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Count Dooku's Dookie Counter</h1>
+        <h2>do do doo doo do do doo doo doo do doo doo do do doo doooo</h1>
+        <h3>Use the force, poop!</h3>
+        <form action="/log" method="POST">
+            <p><input type="date" placeholder="Date" name="Date"></p>
+            <p><input type="text" placeholder="Name of Dookuwan" name="Dookawan"></p>
+            <p><input type="text" placeholder="Description" name="Description"></p>
+            <p><input type="text" placeholder="Before the Dark Times" name="Before"></p>
+            <p><input type="text" placeholder="Rating" name="Rating"></p>
+            <p><button type="submit">Submit</button></p>
+          </form>
+        
+        <div>
+            
+            <h2> Events </h2>
+
+            <ul class="events">
+  <!-- Loop through quotes -->
+            <% for(var i = 0; i < events.length; i++) {%>
+                <li class="event">
+                <!-- Output name from the iterated quote object -->
+                <span><%= events[i].Date %></span>:
+                <!-- Output quote from the iterated quote object -->
+                <span><%= events[i].Dookawan %></span>
+                <span><%= events[i].Description %></span>
+                <span><%= events[i].Before %></span>
+                <span><%= events[i].Rating %></span>
+                </li>
+            <% } %>
+</ul>
+
+
+        </div>
+
+
+        <script src="" async defer></script>
+    </body>
+</html>
