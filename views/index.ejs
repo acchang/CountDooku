@@ -21,16 +21,17 @@
         <h3>Use the force, poop!</h3>
         <form action="/log" method="POST">
             <p><input type="date" placeholder="Date" name="Date"></p>
-            <p><input type="text" placeholder="Name of Dookuwan" name="Dookawan"></p>
+            <p><input type="text" placeholder="Name of Dookawan" name="Dookawan"></p>
             <p><input type="text" placeholder="Description" name="Description"></p>
             <p><input type="text" placeholder="Before the Dark Times" name="Before"></p>
             <p><input type="text" placeholder="Rating" name="Rating"></p>
+            <!-- do a flag or no, or up and down? 🚩 🏳-->
             <p><button type="submit">Submit</button></p>
           </form>
         
         <div>
             
-            <h2> Events </h2>
+            <h2> Log </h2>
 
             <ul class="events">
   <!-- Loop through quotes -->
@@ -43,9 +44,10 @@
                 <span><%= events[i].Description %></span>
                 <span><%= events[i].Before %></span>
                 <span><%= events[i].Rating %></span>
+                <span id="delete-button">🚽</span>
                 </li>
             <% } %>
-</ul>
+            </ul>
 
 
         </div>
