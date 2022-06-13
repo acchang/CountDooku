@@ -31,7 +31,7 @@
         
         <div>
             
-            <h2> Log </h2>
+            <h2 id="log"> Log </h2>
 
             <ul class="events">
   <!-- Loop through quotes -->
@@ -44,7 +44,8 @@
                 <span><%= events[i].Description %></span>
                 <span><%= events[i].Before %></span>
                 <span><%= events[i].Rating %></span>
-                <span id="delete-button">🚽</span>
+                <span id="deletay-button">🚽</span>
+                <button id="delete-button">Delete</button>
                 </li>
             <% } %>
             </ul>
